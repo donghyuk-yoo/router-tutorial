@@ -15,7 +15,8 @@ function App() {
         </li>
       </ul>
       <Route path="/" component={Home} exact={true} />
-      <Route path="/about" component={About} />
+      {/* 다른 path에 같은 컴포넌트 보여주기 */}
+      <Route path={["/about", "/info"]} component={About} />
     </div>
   );
 }
