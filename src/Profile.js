@@ -1,5 +1,5 @@
 import React from "react";
-
+import WithRouterSample from "./WithRouterSample";
 const data = {
   deeperstill: {
     name: "딥",
@@ -25,6 +25,7 @@ function Profile({ match }) {
         {username}({profile.name})
       </h3>
       <p>{profile.description}</p>
+      <WithRouterSample />
     </div>
   );
 }
